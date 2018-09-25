@@ -1,11 +1,11 @@
 <div align="center">
 
-# Simple Conference Call - Outbound
+# Simple Conference Call - Inbound/Outbound
 
 <a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW_Voice.png"/></a>
 </div>
 
-This is a short example PHP script that shows how to establish a conference call with outbound calls.
+Short example PHP scripts that show how to establish a conference call with both inbound/outbound calls.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ This is a short example PHP script that shows how to establish a conference call
 
 ## How It Works
 
-This script creates a bandwidth client with the given credentials, then it creates a conference and creates three outbound call which are added as members to the conference.  If you run this script, all three callers should be placed into the conference call and hear each other when speaking. 
+These example scripts establish a conference call from either inbound calls or outbound calls.  The inbound example requires a web server listening for callbacks from Bandwidth as incoming calls will arrive as POST events.  The outbound example can be executed from the command line, the inbound example can be executed using PHP's built in test server and a tunnel tool like [ngrok](https://www.ngrok.io).      
 
 ## Deploy
 

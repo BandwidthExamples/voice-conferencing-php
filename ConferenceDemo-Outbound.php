@@ -3,7 +3,7 @@
 //Require Bandwidth SDK
 require_once('php-bandwidth/source/Catapult.php');
 
-//Create credentials
+//Create credentials - best stored in environment variables
 $cred = new Catapult\Credentials('BANDWIDTH_USER_ID', 'BANDWIDTH_API_TOKEN', 'BANDWIDTH_API_SECRET');
 
 //Create client object
@@ -11,7 +11,7 @@ $client = new Catapult\Client($cred);
 
 //Create a conference object
 $conference = new Catapult\Conference(array(
-"from" => "+1#########",  //Your Bandwidth number
+"from" => "+1#########"  //Your Bandwidth number
 ));
 
 //Sleep to avoid rate limit errors
