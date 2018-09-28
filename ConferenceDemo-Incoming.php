@@ -1,7 +1,7 @@
 <?php
 
 /* 
- * This script can be run using PHP's test server using th command:
+ * This script can be run using PHP's test server using the command:
  * php -S localhost:5000
  *
  * When a call is placed to the Bandwidth Number, a conference will 
